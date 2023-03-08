@@ -90,10 +90,10 @@ h6 {
 }
 
 img,
-h1 {
+h2 {
   padding-bottom: 1.5rem;
 }
-h1 {
+h2 {
   font-family: $ffPrimary;
   color: $hedingColor;
   font-weight: $fwBold;
@@ -105,7 +105,7 @@ p {
   font-weight: $fwRegular;
   color: $paragraphColor;
   font-size: $fsPrimary;
-  padding-bottom: 2rem;
+  margin-bottom: $defaultMargin * 2;
 }
 /*
     9. Create a root stacking context

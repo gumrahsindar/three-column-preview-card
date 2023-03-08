@@ -73,11 +73,11 @@ h6 {
 }
 
 img,
-h1 {
+h2 {
   padding-bottom: 1.5rem;
 }
 
-h1 {
+h2 {
   font-family: "Big Shoulders Display", cursive, sans-serif;
   color: hsl(0, 0%, 95%);
   font-weight: 700;
@@ -89,7 +89,7 @@ p {
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 1rem;
-  padding-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 /*
@@ -128,10 +128,12 @@ p {
 }
 .card-container .btn {
   font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 .card-container .sedans-btn {
   color: hsl(31, 77%, 52%);
@@ -160,6 +162,7 @@ p {
 
 @media only screen and (min-width: 600px) {
   .card-container {
+    max-width: 920px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
