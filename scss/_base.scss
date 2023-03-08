@@ -1,0 +1,116 @@
+//? fonts
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+//? Variables (font)
+$ffPrimary: "Big Shoulders Display", cursive, sans-serif;
+$ffSecondary: "Lexend Deca", sans-serif;
+$fsPrimary: 1rem;
+$fwRegular: 400;
+$fwBold: 700;
+
+//? Variables (colors)
+$bgColor: hsl(0, 0%, 95%);
+$hedingColor: $bgColor;
+$buttonBgColor: $bgColor;
+$paragraphColor: hsla(0, 0%, 100%, 0.75);
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$darkerCyan: hsl(179, 100%, 13%);
+
+//? Variables (margins)
+$defaultMargin: 3rem;
+$defaultPadding: 3rem;
+
+//! reset
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  min-height: 100vh;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+h1 {
+  padding-bottom: 1.5rem;
+}
+h1 {
+  font-family: $ffPrimary;
+  color: $hedingColor;
+  font-weight: $fwBold;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: $ffSecondary;
+  font-weight: $fwRegular;
+  color: $paragraphColor;
+  font-size: $fsPrimary;
+  padding-bottom: 2rem;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}

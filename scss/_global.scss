@@ -1,0 +1,71 @@
+@use "sass:math";
+
+#main-container {
+  background-color: $bgColor;
+  margin: $defaultMargin * 2 math.div($defaultMargin, 2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 920px;
+}
+
+.card-container {
+  font-family: $ffPrimary;
+
+  .sedans {
+    padding: $defaultPadding;
+    background-color: $brightOrange;
+  }
+  .suvs {
+    padding: $defaultPadding;
+    background-color: $darkCyan;
+  }
+  .luxury {
+    padding: $defaultPadding;
+    background-color: $darkerCyan;
+  }
+  .car-type {
+    text-transform: uppercase;
+  }
+
+  .btn {
+    font-family: $ffSecondary;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .sedans-btn {
+    color: $brightOrange;
+    &:hover {
+      color: $hedingColor;
+      background-color: $brightOrange;
+      border: 2px solid $buttonBgColor;
+    }
+  }
+
+  .suvs-btn {
+    color: $darkCyan;
+    &:hover {
+      color: $hedingColor;
+      background-color: $darkCyan;
+      border: 2px solid $buttonBgColor;
+    }
+  }
+
+  .luxury-btn {
+    color: $darkerCyan;
+    &:hover {
+      color: $hedingColor;
+      background-color: $darkerCyan;
+      border: 2px solid $buttonBgColor;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
