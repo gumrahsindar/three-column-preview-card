@@ -1,8 +1,6 @@
 # three-column-preview-card
 
- # Frontend Mentor - Interactive rating component solution
-
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+ # Frontend Mentor - Three Column Preview Card Solution
 
 ## Table of contents
 
@@ -19,14 +17,10 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
-
-![](./Screenshot-1.png) ![](./Screenshot-2.png)
 
 ### Links
 
